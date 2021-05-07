@@ -22,5 +22,16 @@ Future prospective of the work is to use state of the art point cloud architectu
 ![plot](./software/train_help/segm.png)
 3.  One can also use labelme software([https://github.com/wkentaro/labelme](url) to generate segmentation of few examples and then fine-tune using the pre-trained model.
 4.  The 3d points can be projected on to planar images using information about camera pose.
-![image-20210416093559180](https://user-images.githubusercontent.com/26856470/117438297-aca9ce80-af31-11eb-87e5-3e8291ff3a4b.png)
+![image-20210416101833655](https://user-images.githubusercontent.com/26856470/117438403-ce0aba80-af31-11eb-9a09-7615df570a65.png)
+5.  Extract point cloud information from segemented maps.
+6.  Assign the labels to each points by combining information from each planar image.
+    
+    
+https://user-images.githubusercontent.com/26856470/117438562-00b4b300-af32-11eb-94b8-53af783417ed.mp4
+
+
+https://user-images.githubusercontent.com/26856470/117438574-04483a00-af32-11eb-9af3-e6a9900c1760.mp4
+
+
+
 
