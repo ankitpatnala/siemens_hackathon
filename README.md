@@ -33,10 +33,10 @@ Future prospective of the work is to use state of the art point cloud architectu
 
 
 > **Feel free to contact us**
-* [Huijo Kim] 
+* [Huijo Kim](mailto:huijo.kim@rwth-aachen.de)
 * [Praise Thampi](mailto:praise.thampi@rwth-aachen.de)
-* Ankit Patnala
+* [Ankit Patnala](mailto:ankit.patnala@rwth-aachen.de)
 * [Tung Dinh](mailto:tungdinh2821995@gmail.com)
-* Anna Maria Wieliczek
+* [Anna Maria Wieliczek](mailto:a.mariaw@arcor.de)
 
 
