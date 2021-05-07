@@ -21,3 +21,6 @@ Future prospective of the work is to use state of the art point cloud architectu
 ## Segmentations using pre-trained DeepLabV3 ##
 ![plot](./software/train_help/segm.png)
 3.  One can also use labelme software([https://github.com/wkentaro/labelme](url) to generate segmentation of few examples and then fine-tune using the pre-trained model.
+4.  The 3d points can be projected on to planar images using information about camera pose.
+![image-20210416093559180](https://user-images.githubusercontent.com/26856470/117438297-aca9ce80-af31-11eb-87e5-3e8291ff3a4b.png)
+
