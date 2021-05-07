@@ -1,9 +1,9 @@
 # Siemens Hackathon
 
-#P2X Points to Everything
+#P2X Points to Everything#
 
-##We read roads from points!!!
+##We read roads!!!##
 
 
-##Segmenations using pre-trained DeepLabV3
+##Segmentations using pre-trained DeepLabV3##
 ![plot](./software/train_help/segm.png)
