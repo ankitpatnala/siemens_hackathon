@@ -3,9 +3,9 @@
 # P2X Points to Everything #
 
 
-## We read roads!!!##
+## We read roads!!!
 
-This is joint project of our teammebers.
+This is a joint project of our team members.
 The product provides the segmented point cloud based on the data collected from LIDAR data and from three cameras attached to left, center and right side of the image.
 
 Segmented point clouds helps the engineers for faster visualization of the 3d space.
