@@ -63,7 +63,8 @@ class Projector:
         img_path = self.folder / self.poses[index]['filename']
         img = cv2.imread(str(img_path))
         # project_and_draw(img, points, colors, self.poses[index]['full-pose'], size, max_view_distance)
-
+        points_needed = []
+        colors_needed = []
         pose = self.poses[index]['full-pose']
         rot_vec = -np.array([pose['rx'], pose['ry'], pose['rz']])
         t_vec = -np.array([pose['tx'], pose['ty'], pose['tz']]) @ cv2.Rodrigues(rot_vec)[0].T
@@ -81,13 +82,14 @@ class Projector:
         view_distances = distances[view_mask]
         view_colors = colors[view_mask]
         if len(view_points3d) == 0:
-            return
+            return None,None,None
         view_points2d = cv2.projectPoints(view_points3d, rot_vec, t_vec, self.K, self.distortion)[0].reshape(-1, 2)
-
         p = view_points2d
         selection = np.all((p[:, 0] >= 0, p[:, 0] < img.shape[1], p[:, 1] >= 0, p[:, 1] < img.shape[0]), axis=0)
         p = p[selection]
-
+        points_needed = view_points3d[selection]
+        for each_p in p:
+            colors_needed.append(img[int(each_p[1]),int(each_p[0])].tolist())
         # closest points are at 4 meter distance
         norm_distances = view_distances[selection] / 4.0
         shift = 3
@@ -97,5 +99,8 @@ class Projector:
         for i in range(0, len(p)):
             cv2.circle(img, (I(p[i][0]), I(p[i][1])), I(size / norm_distances[i]), view_colors[i], -1, shift=shift)
 
-        return img
+        
+        return img,points_needed,colors_needed
+
+
 
