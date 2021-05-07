@@ -25,6 +25,9 @@ Future prospective of the work is to use state of the art point cloud architectu
 ![image-20210416101833655](https://user-images.githubusercontent.com/26856470/117438403-ce0aba80-af31-11eb-9a09-7615df570a65.png)
 5.  Extract point cloud information from segemented maps.
 6.  Assign the labels to each points by combining information from each planar image.
+
+
+
 ![Screencast 2021-05-07 01 48 38](https://user-images.githubusercontent.com/26856470/117439680-6f464080-af33-11eb-8608-29e18dbf7350.gif)
 
 
