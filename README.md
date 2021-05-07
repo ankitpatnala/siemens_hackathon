@@ -32,11 +32,11 @@ Future prospective of the work is to use state of the art point cloud architectu
 
 
 
-> Feel free to contact us
-> Huijo Kim 
-> Praise Thampi
-> Ankit Patnala
-> Tung Dinh
-> Anna Maria Wieliczek
+> **Feel free to contact us**
+* Huijo Kim 
+* Praise Thampi
+* Ankit Patnala
+* Tung Dinh
+* Anna Maria Wieliczek
 
 
